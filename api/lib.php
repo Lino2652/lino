@@ -4,9 +4,6 @@ require_once '../vendor/autoload.php';
 
 use Respect\Validation\Validator as v;
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . "/..");
-$dotenv->load();
-
 v::key('DATABASE_URL', v::stringType())
   ->assert($_ENV);
 

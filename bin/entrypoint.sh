@@ -7,4 +7,4 @@ chmod +x ./goose
 # migrate -source ./migrations -database $DATABASE_URL up
 ./goose -dir ./migrations postgres $DATABASE_URL up
 
-php -S "0.0.0.0:8080"
+# php -S "0.0.0.0:8080"
